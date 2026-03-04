@@ -1,11 +1,25 @@
 
-class program3 {
+import java.util.Scanner;
 
+public class program3 {
     public static void main(String[] args) {
-        int km,m;
-        km=5;
-        System.out.println("Distance in kilometer :"+ km);
-        m=km*1000;
-        System.out.println("Distance in meters :"+(5*km));
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of Days");
+        int days = sc.nextInt();
+
+        int salary;
+
+        if(days<15){
+            System.out.println("Salary is "+(days*350));
+        }
+        else if(days<=22){
+            System.out.println("Salary is "+((days*350)+2000));
+        }
+        else{
+             System.out.println("Salary is "+((days*500)+2000));
+        }
+           
     }
 }
+
