@@ -49,4 +49,4 @@ The main purpose of this repository is to practice Java programming and improve 
 
 👨‍💻 Author
 
-Om Waghmore 
+Omkar Khamkar 
