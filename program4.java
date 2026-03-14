@@ -1,19 +1,25 @@
+
+import java.util.Scanner;
+
 public class program4 {
-    public static void main(String[] args) {
+    static public  void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         
-         
-        int x,y,z;
+        float amt ;
+        System.out.println("Enter the purchase amount:");
+        amt = sc.nextFloat();
 
-        x=25;
-        y=18;
-        z=40;
-       
-        System.out.println("Quantity of Rs.100 :"+(x));
-        System.out.println("Quantity of Rs.50 :"+(y));
-        System.out.println("Quantity of Rs.10 :"+(z));
+        float discount = amt*7/100;
 
-        System.out.println("Total Amount :"+(x*100+y*50+z*10));
+        if(amt>=5000){
+            System.out.println("Discount is "+(discount+500));
+        }
+        else if(amt>=1000){
+            System.out.println("Discount is "+(discount+300));
+        }
+        else{
+            System.out.println("Discount is "+(discount));
+        }
 
-    
     }
 }
