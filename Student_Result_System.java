@@ -61,8 +61,7 @@ class Result extends Exam{
         }
     }
     
-}
-     
+}    
 public class Student_Result_System {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
